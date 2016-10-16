@@ -16,8 +16,6 @@
 
 PRODUCT_COPY_FILES += \
 	vendor/samsung/gtexslte/proprietary/lib/soundfx/libmyspace.so:system/lib/soundfx/libmyspace.so \
-	vendor/samsung/gtexslte/proprietary/system/libsurfaceflinger.so:system/lib/libsurfaceflinger.so \
-	vendor/samsung/gtexslte/proprietary/system/libgui.so:system/lib/libgui.so \
 	vendor/samsung/gtexslte/proprietary/etc/HARRIER_ASIC_PATCH_LPRAM_IMAGE.bin:system/etc/HARRIER_ASIC_PATCH_LPRAM_IMAGE.bin \
 	vendor/samsung/gtexslte/proprietary/etc/HARRIER_ASIC_PATCH_RAM_IMAGE.bin:system/etc/HARRIER_ASIC_PATCH_RAM_IMAGE.bin \
 	vendor/samsung/gtexslte/proprietary/usr/idc/Synaptics_HID_TouchPad.idc:system/usr/idc/Synaptics_HID_TouchPad.idc \
@@ -200,7 +198,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/gtexslte/proprietary/lib/libhwpmain.so:system/lib/libhwpmain.so \
 	vendor/samsung/gtexslte/proprietary/lib/libhydra.so:system/lib/libhydra.so \
 	vendor/samsung/gtexslte/proprietary/lib/libInteractivePanoramaUtil.so:system/lib/libInteractivePanoramaUtil.so \
-	vendor/samsung/gtexslte/proprietary/lib/libion.so:system/lib/libion.so \
 	vendor/samsung/gtexslte/proprietary/lib/libiprouteutil.so:system/lib/libiprouteutil.so \
 	vendor/samsung/gtexslte/proprietary/lib/libiwnpi.so:system/lib/libiwnpi.so \
 	vendor/samsung/gtexslte/proprietary/lib/libjpega.so:system/lib/libjpega.so \
@@ -375,7 +372,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/gtexslte/proprietary/lib/libsoundtriggerservice.so:system/lib/libsoundtriggerservice.so \
 	vendor/samsung/gtexslte/proprietary/lib/libsoundtrigger.so:system/lib/libsoundtrigger.so \
 	vendor/samsung/gtexslte/proprietary/lib/libspaf.so:system/lib/libspaf.so \
-	vendor/samsung/gtexslte/proprietary/lib/libsparse.so:system/lib/libsparse.so \
 	vendor/samsung/gtexslte/proprietary/lib/libspdkeygen.so:system/lib/libspdkeygen.so \
 	vendor/samsung/gtexslte/proprietary/lib/libsprdftms.so:system/lib/libsprdftms.so \
 	vendor/samsung/gtexslte/proprietary/lib/libsprdlsc.so:system/lib/libsprdlsc.so \
@@ -421,13 +417,14 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/gtexslte/proprietary/lib/hw/camera.sc8830.so:system/lib/hw/camera.sc8830.so \
 	vendor/samsung/gtexslte/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
 	vendor/samsung/gtexslte/proprietary/lib/hw/gps.goldfish.so:system/lib/hw/gps.goldfish.so \
-	vendor/samsung/gtexslte/proprietary/lib/hw/gralloc.sc8830.so:system/lib/hw/gralloc.sc8830.so \
-	vendor/samsung/gtexslte/proprietary/lib/hw/hwcomposer.sc8830.so:system/lib/hw/hwcomposer.sc8830.so \
-	vendor/samsung/gtexslte/proprietary/lib/hw/lights.sc8830.so:system/lib/hw/lights.sc8830.so \
-	vendor/samsung/gtexslte/proprietary/lib/hw/power.sc8830.so:system/lib/hw/power.sc8830.so \
-	vendor/samsung/gtexslte/proprietary/lib/hw/sensors.sc8830.so:system/lib/hw/sensors.sc8830.so \
-	vendor/samsung/gtexslte/proprietary/lib/hw/sprd_gsp.sc8830.so:system/lib/hw/sprd_gsp.sc8830.so \
 	vendor/samsung/gtexslte/proprietary/lib/soundfx/libaudioeffectoffload.so:system/lib/soundfx/libaudioeffectoffload.so \
 	vendor/samsung/gtexslte/proprietary/lib/soundfx/libaudiosa_sec.so:system/lib/soundfx/libaudiosa_sec.so \
-	vendor/samsung/gtexslte/proprietary/lib/libtinyalsa.so:system/lib/libtinyalsa.so \
-	vendor/samsung/gtexslte/proprietary/lib/libhardware_legacy.so:system/lib/libhardware_legacy.so
+	vendor/samsung/gtexslte/proprietary/lib/hw/gralloc.sc8830.so:system/lib/hw/gralloc.sc8830.so
+	# vendor/samsung/gtexslte/proprietary/lib/libtinyalsa.so:system/lib/libtinyalsa.so \
+	# vendor/samsung/gtexslte/proprietary/lib/libhardware_legacy.so:system/lib/libhardware_legacy.so \
+	# vendor/samsung/gtexslte/proprietary/lib/hw/gralloc.sc8830.so:system/lib/hw/gralloc.sc8830.so \
+	# vendor/samsung/gtexslte/proprietary/lib/hw/hwcomposer.sc8830.so:system/lib/hw/hwcomposer.sc8830.so \
+	# vendor/samsung/gtexslte/proprietary/lib/hw/lights.sc8830.so:system/lib/hw/lights.sc8830.so \
+	# vendor/samsung/gtexslte/proprietary/lib/hw/power.sc8830.so:system/lib/hw/power.sc8830.so \
+	# vendor/samsung/gtexslte/proprietary/lib/hw/sensors.sc8830.so:system/lib/hw/sensors.sc8830.so \
+	# vendor/samsung/gtexslte/proprietary/lib/hw/sprd_gsp.sc8830.so:system/lib/hw/sprd_gsp.sc8830.so
