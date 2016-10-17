@@ -20,6 +20,8 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/gtexslte/proprietary/bin/hostapd:system/bin/hostapd \
 	vendor/samsung/gtexslte/proprietary/bin/macloader:system/bin/macloader \
 	vendor/samsung/gtexslte/proprietary/bin/slogmodem:system/bin/slogmodem \
+	vendor/samsung/gtexslte/proprietary/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
+	vendor/samsung/gtexslte/proprietary/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
 	vendor/samsung/gtexslte/proprietary/lib/libaudio-ril.so:system/lib/libaudio-ril.so \
 	vendor/samsung/gtexslte/proprietary/lib/liblsc.so:system/lib/liblsc.so \
 	vendor/samsung/gtexslte/proprietary/lib/libcalibration.so:system/lib/libcalibration.so \
