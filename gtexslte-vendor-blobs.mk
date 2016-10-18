@@ -61,6 +61,7 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/gtexslte/proprietary/bin/ext_data.sh:system/bin/ext_data.sh \
 	vendor/samsung/gtexslte/proprietary/bin/ext_kill.sh:system/bin/ext_kill.sh \
  	vendor/samsung/gtexslte/proprietary/bin/ext_symlink.sh:system/bin/ext_symlink.sh \
+	vendor/samsung/gtexslte/proprietary/bin/prepare_param.sh:system/bin/prepare_param.sh \
 	vendor/samsung/gtexslte/proprietary/lib/libeng-audio.so:system/lib/libeng-audio.so \
 	vendor/samsung/gtexslte/proprietary/lib/libefuse.so:system/lib/libefuse.so \
   vendor/samsung/gtexslte/proprietary/lib/libbt-aptx-4.0.3.so:system/lib/libbt-aptx-4.0.3.so \
