@@ -20,6 +20,7 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/gtexslte/proprietary/bin/hostapd:system/bin/hostapd \
 	vendor/samsung/gtexslte/proprietary/bin/macloader:system/bin/macloader \
 	vendor/samsung/gtexslte/proprietary/bin/slogmodem:system/bin/slogmodem \
+	vendor/samsung/gtexslte/proprietary/lib/libsamsungRecord.so:system/lib/libsamsungRecord.so \
 	vendor/samsung/gtexslte/proprietary/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
 	vendor/samsung/gtexslte/proprietary/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
 	vendor/samsung/gtexslte/proprietary/lib/libaudio-ril.so:system/lib/libaudio-ril.so \
@@ -27,7 +28,12 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/gtexslte/proprietary/lib/libcalibration.so:system/lib/libcalibration.so \
 	vendor/samsung/gtexslte/proprietary/lib/libsecure_storage.so:system/lib/libsecure_storage.so \
 	vendor/samsung/gtexslte/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
-	vendor/samsung/gtexslte/proprietary/bin/wpa_supplicant:system/bin/wpa_supplicant \
+	vendor/samsung/gtexslte/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
+	vendor/samsung/gtexslte/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/ibWVStreamControlAPI_L3.so \
+	vendor/samsung/gtexslte/proprietary/vendor/lib/mediadrm:system/vendor/lib/mediadrm \
+	vendor/samsung/gtexslte/proprietary/lib/lib_Samsung_SB_AM_for_ICS_v04004.so:system/lib/lib_Samsung_SB_AM_for_ICS_v04004.so \
+	vendor/samsung/gtexslte/proprietary/lib/lib_SamsungRec_V04013.so:system/lib/lib_SamsungRec_V04013.so \
+	vendor/samsung/gtexslte/proprietary/lib/libsamsungSoundbooster.so:system/lib/libsamsungSoundbooster.so \
 	vendor/samsung/gtexslte/proprietary/lib/libwvm.so:system/lib/libwvm.so \
 	vendor/samsung/gtexslte/proprietary/lib/lib_Samsung_Resampler.so:system/lib/lib_Samsung_Resampler.so \
 	vendor/samsung/gtexslte/proprietary/lib/libiwnpi.so:system/lib/libiwnpi.so \
@@ -88,7 +94,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/gtexslte/proprietary/etc/slog.conf:system/etc/slog.conf \
 	vendor/samsung/gtexslte/proprietary/etc/connectivity_configure.ini:system/etc/connectivity_configure.ini \
 	vendor/samsung/gtexslte/proprietary/etc/connectivity_calibration.ini:system/etc/connectivity_calibration.ini \
-	vendor/samsung/gtexslte/proprietary/etc/connectivity_configure.ini:system/etc/connectivity_configure.ini \
 	vendor/samsung/gtexslte/proprietary/etc/firmware/sc2331_fdl.bin:system/etc/firmware/sc2331_fdl.bin \
 	vendor/samsung/gtexslte/proprietary/etc/firmware/sc2331_fw.bin:system/etc/firmware/sc2331_fw.bin \
 	vendor/samsung/gtexslte/proprietary/etc/audio_para:system/etc/audio_para \
