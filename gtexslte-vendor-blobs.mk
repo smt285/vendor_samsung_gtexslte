@@ -31,8 +31,8 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/gtexslte/proprietary/lib/drm/libomaplugin.so:system/lib/drm/libomaplugin.so \
 	vendor/samsung/gtexslte/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
 	vendor/samsung/gtexslte/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
-	vendor/samsung/gtexslte/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
-	vendor/samsung/gtexslte/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so
+	vendor/samsung/gtexslte/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so
+	# vendor/samsung/gtexslte/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so
 
 #AUDIO
 PRODUCT_COPY_FILES += \
@@ -42,7 +42,50 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/gtexslte/proprietary/lib/libvbpga.so:system/lib/libvbpga.so \
 	vendor/samsung/gtexslte/proprietary/etc/codec_pga.xml:system/etc/codec_pga.xml
 
+
+#Video
 PRODUCT_COPY_FILES += \
+	vendor/samsung/gtexslte/proprietary/lib/hw/gralloc.sc8830.so:system/lib/hw/gralloc.sc8830.so \
+	vendor/samsung/gtexslte/proprietary/lib/libboost.so:system/lib/libboost.so
+
+#Bluetooth
+PRODUCT_COPY_FILES += \
+	vendor/samsung/gtexslte/proprietary/lib/libbt-iopdb.so:system/lib/libbt-iopdb.so \
+	vendor/samsung/gtexslte/proprietary/lib/libbt-aptx-4.0.3.so:system/lib/libbt-aptx-4.0.3.so \
+	vendor/samsung/gtexslte/proprietary/lib/libbt-codec_aptx.so:system/lib/libbt-codec_aptx.so \
+	vendor/samsung/gtexslte/proprietary/lib/libbt-codec_sshd.so:system/lib/libbt-codec_sshd.so \
+	vendor/samsung/gtexslte/proprietary/lib/libicuu1.so:system/lib/libicuu1.so \
+	vendor/samsung/gtexslte/proprietary/lib/libbt-iopdb_mod.mod.so:system/lib/libbt-iopdb_mod.so \
+	vendor/samsung/gtexslte/proprietary/framework/com.broadcom.bt.jar:system/lib/com.broadcom.bt.jar
+	# vendor/samsung/gtexslte/proprietary/lib/libbt-vendor.so:system/lib/libbt-vendor.so
+
+# RILD
+PRODUCT_COPY_FILES += \
+	vendor/samsung/gtexslte/proprietary/lib/libatchannel.so:system/lib/libatchannel.so \
+	vendor/samsung/gtexslte/proprietary/lib/libril.so:system/lib/libril.so \
+	vendor/samsung/gtexslte/proprietary/bin/rild:system/bin/rild \
+	vendor/samsung/gtexslte/proprietary/lib/libatparser.so:system/lib/libatparser.so \
+	vendor/samsung/gtexslte/proprietary/bin/at_distributor:system/bin/at_distributor \
+	vendor/samsung/gtexslte/proprietary/bin/ddexe:system/bin/ddexe \
+	vendor/samsung/gtexslte/proprietary/bin/connfwexe:system/bin/connfwexe \
+	vendor/samsung/gtexslte/proprietary/bin/hostapd:system/bin/hostapd \
+	vendor/samsung/gtexslte/proprietary/bin/macloader:system/bin/macloader \
+	vendor/samsung/gtexslte/proprietary/bin/slogmodem:system/bin/slogmodem \
+	vendor/samsung/gtexslte/proprietary/bin/refnotify:system/bin/refnotify \
+	vendor/samsung/gtexslte/proprietary/bin/download:system/bin/download \
+	vendor/samsung/gtexslte/proprietary/bin/cp_diskserver:system/bin/cp_diskserver \
+	vendor/samsung/gtexslte/proprietary/bin/modem_control:system/bin/modem_control \
+	vendor/samsung/gtexslte/proprietary/bin/modemd:system/bin/modemd \
+	vendor/samsung/gtexslte/proprietary/bin/wcnd:system/bin/wcnd \
+	vendor/samsung/gtexslte/proprietary/bin/wcnd_cli:system/bin/wcnd_cli \
+	vendor/samsung/gtexslte/proprietary/bin/ext_data.sh:system/bin/ext_data.sh \
+	vendor/samsung/gtexslte/proprietary/bin/ext_kill.sh:system/bin/ext_kill.sh \
+	vendor/samsung/gtexslte/proprietary/bin/ext_symlink.sh:system/bin/ext_symlink.sh \
+	vendor/samsung/gtexslte/proprietary/bin/prepare_param.sh:system/bin/prepare_param.sh
+
+
+PRODUCT_COPY_FILES += \
+	vendor/samsung/gtexslte/proprietary/bin/auditd:system/bin/auditd \
 	vendor/samsung/gtexslte/proprietary/bin/npsmobex:system/bin/npsmobex \
 	vendor/samsung/gtexslte/proprietary/bin/cmd_services:system/bin/cmd_services \
 	vendor/samsung/gtexslte/proprietary/bin/charge:system/bin/charge \
@@ -52,11 +95,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/gtexslte/proprietary/bin/bootchecker:system/bin/bootchecker \
 	vendor/samsung/gtexslte/proprietary/bin/lpm:system/bin/lpm \
 	vendor/samsung/gtexslte/proprietary/bin/drsd:system/bin/drsd \
-	vendor/samsung/gtexslte/proprietary/bin/ddexe:system/bin/ddexe \
-	vendor/samsung/gtexslte/proprietary/bin/connfwexe:system/bin/connfwexe \
-	vendor/samsung/gtexslte/proprietary/bin/hostapd:system/bin/hostapd \
-	vendor/samsung/gtexslte/proprietary/bin/macloader:system/bin/macloader \
-	vendor/samsung/gtexslte/proprietary/bin/slogmodem:system/bin/slogmodem \
 	vendor/samsung/gtexslte/proprietary/lib/libedmnativehelper.so:system/lib/libedmnativehelper.so \
 	vendor/samsung/gtexslte/proprietary/lib/libstlport.so:system/lib/libstlport.so \
 	vendor/samsung/gtexslte/proprietary/lib/libstrongswan.so:system/lib/libstrongswan.so \
@@ -89,17 +127,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/gtexslte/proprietary/lib/libawb.so:system/lib/libawb.so \
 	vendor/samsung/gtexslte/proprietary/lib/libae.so:system/lib/libae.so \
 	vendor/samsung/gtexslte/proprietary/lib/libAl_Awb_v2.so:system/lib/libAl_Awb_v2.so \
-	vendor/samsung/gtexslte/proprietary/bin/refnotify:system/bin/refnotify \
-	vendor/samsung/gtexslte/proprietary/bin/download:system/bin/download \
-	vendor/samsung/gtexslte/proprietary/bin/cp_diskserver:system/bin/cp_diskserver \
-	vendor/samsung/gtexslte/proprietary/bin/modem_control:system/bin/modem_control \
-	vendor/samsung/gtexslte/proprietary/bin/modemd:system/bin/modemd \
-	vendor/samsung/gtexslte/proprietary/bin/wcnd:system/bin/wcnd \
-	vendor/samsung/gtexslte/proprietary/bin/wcnd_cli:system/bin/wcnd_cli \
-	vendor/samsung/gtexslte/proprietary/bin/ext_data.sh:system/bin/ext_data.sh \
-	vendor/samsung/gtexslte/proprietary/bin/ext_kill.sh:system/bin/ext_kill.sh \
- 	vendor/samsung/gtexslte/proprietary/bin/ext_symlink.sh:system/bin/ext_symlink.sh \
-	vendor/samsung/gtexslte/proprietary/bin/prepare_param.sh:system/bin/prepare_param.sh \
 	vendor/samsung/gtexslte/proprietary/lib/libefuse.so:system/lib/libefuse.so \
 	vendor/samsung/gtexslte/proprietary/lib/libbm.so:system/lib/libbm.so \
 	vendor/samsung/gtexslte/proprietary/lib/libaf_running.so:system/lib/libaf_running.so \
@@ -114,8 +141,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/gtexslte/proprietary/bin/wlandutservice:system/bin/wlandutservice \
 	vendor/samsung/gtexslte/proprietary/bin/macloader:system/bin/macloader \
 	vendor/samsung/gtexslte/proprietary/bin/mfgloader:system/bin/mfgloader \
-	vendor/samsung/gtexslte/proprietary/lib/libatparser.so:system/lib/libatparser.so \
-	vendor/samsung/gtexslte/proprietary/bin/at_distributor:system/bin/at_distributor \
 	vendor/samsung/gtexslte/proprietary/etc/tiny_hw.xml:system/etc/tiny_hw.xml \
 	vendor/samsung/gtexslte/proprietary/etc/HARRIER_ASIC_PATCH_LPRAM_IMAGE.bin:system/etc/HARRIER_ASIC_PATCH_LPRAM_IMAGE.bin \
 	vendor/samsung/gtexslte/proprietary/etc/HARRIER_ASIC_PATCH_RAM_IMAGE.bin:system/etc/HARRIER_ASIC_PATCH_RAM_IMAGE.bin \
@@ -140,22 +165,9 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/gtexslte/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
 	vendor/samsung/gtexslte/proprietary/lib/libmtp_samsung_jni.so:system/lib/libmtp_samsung_jni.so \
 	vendor/samsung/gtexslte/proprietary/lib/libmtp_samsung.so:system/lib/libmtp_samsung.so \
-	vendor/samsung/gtexslte/proprietary/lib/hw/camera.sc8830.so:system/lib/hw/camera.sc8830.so \
-	vendor/samsung/gtexslte/proprietary/lib/hw/gralloc.sc8830.so:system/lib/hw/gralloc.sc8830.so \
-	vendor/samsung/gtexslte/proprietary/lib/libatchannel.so:system/lib/libatchannel.so \
-	vendor/samsung/gtexslte/proprietary/lib/libril.so:system/lib/libril.so \
-	vendor/samsung/gtexslte/proprietary/bin/rild:system/bin/rild \
-	vendor/samsung/gtexslte/proprietary/lib/libbt-iopdb.so:system/lib/libbt-iopdb.so \
-	vendor/samsung/gtexslte/proprietary/lib/libbt-aptx-4.0.3.so:system/lib/libbt-aptx-4.0.3.so \
-	vendor/samsung/gtexslte/proprietary/lib/libbt-codec_aptx.so:system/lib/libbt-codec_aptx.so \
-	vendor/samsung/gtexslte/proprietary/lib/libbt-codec_sshd.so:system/lib/libbt-codec_sshd.so \
-	vendor/samsung/gtexslte/proprietary/lib/libicuu1.so:system/lib/libicuu1.so \
-	vendor/samsung/gtexslte/proprietary/lib/libbt-iopdb_mod.mod.so:system/lib/libbt-iopdb_mod.so \
-	vendor/samsung/gtexslte/proprietary/lib/libbt-iopdb.so:system/lib/libbt-iopdb.so \
-	vendor/samsung/gtexslte/proprietary/lib/libbt-vendor.so:system/lib/libbt-vendor.so
+	vendor/samsung/gtexslte/proprietary/lib/hw/camera.sc8830.so:system/lib/hw/camera.sc8830.so
 
 	# vendor/samsung/gtexslte/proprietary/lib/librilutils.so:system/lib/librilutils.so \
-	# vendor/samsung/gtexslte/proprietary/lib/libatchannel.so:system/lib/libatchannel.so \
 	# vendor/samsung/gtexslte/proprietary/lib/libeng-audio.so:system/lib/libeng-audio.so
 	# vendor/samsung/gtexslte/proprietary/lib/hw/audio.primary.sc8830.so:system/lib/hw/audio.primary.sc8830.so
 	# vendor/samsung/gtexslte/proprietary/lib/libtinyalsa.so:system/lib/libtinyalsa.so \
