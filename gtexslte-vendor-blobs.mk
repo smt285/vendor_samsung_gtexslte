@@ -59,7 +59,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	vendor/samsung/gtexslte/proprietary/lib/libboost.so:system/lib/libboost.so \
 	vendor/samsung/gtexslte/proprietary/lib/hw/gralloc.sc8830.so:system/lib/hw/gralloc.sc8830.so \
-	vendor/samsung/gtexslte/proprietary/lib/hw/hwcomposer.sc8830.so:system/lib/hw/hwcomposer.sc8830.so \
+	# vendor/samsung/gtexslte/proprietary/lib/hw/hwcomposer.sc8830.so:system/lib/hw/hwcomposer.sc8830.so \
 
 #Bluetooth
 PRODUCT_COPY_FILES += \
@@ -205,8 +205,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/gtexslte/proprietary/lib/egl/libGLES_mali.so:system/lib/egl/libGLES_mali.so \
 	vendor/samsung/gtexslte/proprietary/lib/hw/sensors.sc8830.so:system/lib/hw/sensors.sc8830.so \
 	vendor/samsung/gtexslte/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
-	vendor/samsung/gtexslte/proprietary/lib/libmtp_samsung_jni.so:system/lib/libmtp_samsung_jni.so \
-	vendor/samsung/gtexslte/proprietary/lib/libmtp_samsung.so:system/lib/libmtp_samsung.so \
 	vendor/samsung/gtexslte/proprietary/lib/hw/camera.sc8830.so:system/lib/hw/camera.sc8830.so
 
 	# vendor/samsung/gtexslte/proprietary/lib/librilutils.so:system/lib/librilutils.so \
