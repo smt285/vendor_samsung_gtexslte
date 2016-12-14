@@ -58,8 +58,9 @@ PRODUCT_COPY_FILES += \
 #Video
 PRODUCT_COPY_FILES += \
 	vendor/samsung/gtexslte/proprietary/lib/libboost.so:system/lib/libboost.so \
+	vendor/samsung/gtexslte/proprietary/lib/hw/sprd_gsp.sc8830.so:system/lib/hw/sprd_gsp.sc8830.so \
 	vendor/samsung/gtexslte/proprietary/lib/hw/gralloc.sc8830.so:system/lib/hw/gralloc.sc8830.so \
-	# vendor/samsung/gtexslte/proprietary/lib/hw/hwcomposer.sc8830.so:system/lib/hw/hwcomposer.sc8830.so \
+	vendor/samsung/gtexslte/proprietary/lib/hw/hwcomposer.sc8830.so:system/lib/hw/hwcomposer.sc8830.so \
 
 #Bluetooth
 PRODUCT_COPY_FILES += \
@@ -69,7 +70,7 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/gtexslte/proprietary/lib/libbt-codec_sshd.so:system/lib/libbt-codec_sshd.so \
 	vendor/samsung/gtexslte/proprietary/lib/libicuu1.so:system/lib/libicuu1.so \
 	vendor/samsung/gtexslte/proprietary/lib/libbt-iopdb_mod.mod.so:system/lib/libbt-iopdb_mod.so \
-	vendor/samsung/gtexslte/proprietary/lib/libbt-vendor.so:system/lib/libbt-vendor.so
+	vendor/samsung/gtexslte/proprietary/lib/libbt-vendor.so:system/vendor/lib/libbt-vendor.so
 
 # Codecs
 PRODUCT_COPY_FILES += \
@@ -93,7 +94,14 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/gtexslte/proprietary/lib/libsomxcmn.so:system/lib/libsomxcmn.so \
 	vendor/samsung/gtexslte/proprietary/lib/libsomxaace.so:system/lib/libsomxaace.so \
 	vendor/samsung/gtexslte/proprietary/lib/libsomxnaace.so:system/lib/libsomxnaace.so \
-#	vendor/samsung/gtexslte/proprietary/lib/libstagefright_omx.so:system/lib/libstagefright_omx.so \
+	vendor/samsung/gtexslte/proprietary/lib/libstagefright_sprd_h264dec.so:system/lib/libstagefright_sprd_h264dec.so \
+	vendor/samsung/gtexslte/proprietary/lib/libstagefright_sprd_h264enc.so:system/lib/libstagefright_sprd_h264enc.so \
+	vendor/samsung/gtexslte/proprietary/lib/libstagefright_sprd_mp3dec.so:system/lib/libstagefright_sprd_mp3dec.so \
+	vendor/samsung/gtexslte/proprietary/lib/libstagefright_sprd_mpeg4dec.so:system/lib/libstagefright_sprd_mpeg4dec.so \
+	vendor/samsung/gtexslte/proprietary/lib/libstagefright_sprd_mpeg4enc.so:system/lib/libstagefright_sprd_mpeg4enc.so \
+	vendor/samsung/gtexslte/proprietary/lib/libstagefright_sprd_vpxdec.so:vendor/samsung/gtexslte/proprietary/lib/libstagefright_sprd_vpxdec.so \
+	vendor/samsung/gtexslte/proprietary/lib/libstagefright_sprd_soft_h264dec.so:system/lib/libstagefright_sprd_soft_h264dec.so \
+	# vendor/samsung/gtexslte/proprietary/lib/libstagefright_omx.so:system/lib/libstagefright_omx.so \
 
 
 # RILD
