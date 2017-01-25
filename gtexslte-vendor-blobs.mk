@@ -44,23 +44,10 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/gtexslte/proprietary/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
 	vendor/samsung/gtexslte/proprietary/lib/libaudio-ril.so:system/lib/libaudio-ril.so \
 	vendor/samsung/gtexslte/proprietary/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
-	vendor/samsung/gtexslte/proprietary/lib/libvbpga.so:system/lib/libvbpga.so \
 	vendor/samsung/gtexslte/proprietary/etc/codec_pga.xml:system/etc/codec_pga.xml \
-	vendor/samsung/gtexslte/proprietary/etc/tiny_hw.xml:system/etc/tiny_hw.xml \
-	vendor/samsung/gtexslte/proprietary/etc/audio_para:system/etc/audio_para \
-	vendor/samsung/gtexslte/proprietary/etc/audio_hw.xml:system/etc/audio_hw.xml \
 	vendor/samsung/gtexslte/proprietary/etc/audio_policy.conf:system/etc/audio_policy.conf \
 	vendor/samsung/gtexslte/proprietary/lib/libatchannel.so:system/lib/libatchannel.so \
-	vendor/samsung/gtexslte/proprietary/lib/libeng-audio.so:system/lib/libeng-audio.so \
 	vendor/samsung/gtexslte/proprietary/lib/librilutils.so:system/lib/librilutils.so \
-	vendor/samsung/gtexslte/proprietary/lib/hw/audio_policy.sc8830.so:system/lib/hw/audio_policy.sc8830.so \
-
-#Video
-PRODUCT_COPY_FILES += \
-	vendor/samsung/gtexslte/proprietary/lib/libboost.so:system/lib/libboost.so \
-	vendor/samsung/gtexslte/proprietary/lib/hw/sprd_gsp.sc8830.so:system/lib/hw/sprd_gsp.sc8830.so \
-	vendor/samsung/gtexslte/proprietary/lib/hw/gralloc.sc8830.so:system/lib/hw/gralloc.sc8830.so \
-	vendor/samsung/gtexslte/proprietary/lib/hw/hwcomposer.sc8830.so:system/lib/hw/hwcomposer.sc8830.so \
 
 #Bluetooth
 PRODUCT_COPY_FILES += \
@@ -72,37 +59,32 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/gtexslte/proprietary/lib/libbt-iopdb_mod.mod.so:system/lib/libbt-iopdb_mod.so \
 	vendor/samsung/gtexslte/proprietary/lib/libbt-vendor.so:system/vendor/lib/libbt-vendor.so
 
+#gpu
+PRODUCT_COPY_FILES += \
+	vendor/samsung/gtexslte/proprietary/lib/egl/libGLES_mali.so:system/lib/egl/libGLES_mali.so \
+ 	vendor/samsung/gtexslte/proprietary/lib/libboost.so:system/lib/libboost.so \
+	vendor/samsung/gtexslte/proprietary/lib/hw/gralloc.sc8830.so:system/lib/hw/gralloc.sc8830.so \
+ # 	vendor/samsung/gtexslte/proprietary/lib/hw/sprd_gsp.sc8830.so:system/lib/hw/sprd_gsp.sc8830.so \
+ # 	vendor/samsung/gtexslte/proprietary/lib/hw/hwcomposer.sc8830.so:system/lib/hw/hwcomposer.sc8830.so \
+
 # Codecs
 PRODUCT_COPY_FILES += \
-	vendor/samsung/gtexslte/proprietary/etc/somxreg.conf:system/etc/somxreg.conf \
-	vendor/samsung/gtexslte/proprietary/lib/libsomxcore.so:system/lib/libsomxcore.so \
-	vendor/samsung/gtexslte/proprietary/lib/libsomxmp43d.so:system/lib/libsomxmp43d.so \
-	vendor/samsung/gtexslte/proprietary/lib/libsomxwmv7d.so:system/lib/libsomxwmv7d.so \
-	vendor/samsung/gtexslte/proprietary/lib/libsomxwmv8d.so:system/lib/libsomxwmv8d.so \
-	vendor/samsung/gtexslte/proprietary/lib/libsomxvc1dsw.so:system/lib/libsomxvc1dsw.so \
-	vendor/samsung/gtexslte/proprietary/lib/libsomxvp8d.so:system/lib/libsomxvp8d.so \
-	vendor/samsung/gtexslte/proprietary/lib/libsomxadpcmd.so:system/lib/libsomxadpcmd.so \
-	vendor/samsung/gtexslte/proprietary/lib/libsomxmp4vdsw.so:system/lib/libsomxmp4vdsw.so \
-	vendor/samsung/gtexslte/proprietary/lib/libsomx264dsw.so:system/lib/libsomx264dsw.so \
-	vendor/samsung/gtexslte/proprietary/lib/libsomxflacd.so:system/lib/libsomxflacd.so \
-	vendor/samsung/gtexslte/proprietary/lib/libsomxwmad.so:system/lib/libsomxwmad.so \
-	vendor/samsung/gtexslte/proprietary/lib/libsomxaacd.so:system/lib/libsomxaacd.so \
-	vendor/samsung/gtexslte/proprietary/lib/libsomxmp3d.so:system/lib/libsomxmp3d.so \
-	vendor/samsung/gtexslte/proprietary/lib/libsomxamrd.so:system/lib/libsomxamrd.so \
-	vendor/samsung/gtexslte/proprietary/lib/libsomxvencsw.so:system/lib/libsomxvencsw.so \
-	vendor/samsung/gtexslte/proprietary/lib/libsomxhevcdsw.so:system/lib/libsomxhevcdsw.so \
-	vendor/samsung/gtexslte/proprietary/lib/libsomxcmn.so:system/lib/libsomxcmn.so \
-	vendor/samsung/gtexslte/proprietary/lib/libsomxaace.so:system/lib/libsomxaace.so \
-	vendor/samsung/gtexslte/proprietary/lib/libsomxnaace.so:system/lib/libsomxnaace.so \
-	vendor/samsung/gtexslte/proprietary/lib/libstagefright_sprd_h264dec.so:system/lib/libstagefright_sprd_h264dec.so \
-	vendor/samsung/gtexslte/proprietary/lib/libstagefright_sprd_h264enc.so:system/lib/libstagefright_sprd_h264enc.so \
-	vendor/samsung/gtexslte/proprietary/lib/libstagefright_sprd_mp3dec.so:system/lib/libstagefright_sprd_mp3dec.so \
-	vendor/samsung/gtexslte/proprietary/lib/libstagefright_sprd_mpeg4dec.so:system/lib/libstagefright_sprd_mpeg4dec.so \
-	vendor/samsung/gtexslte/proprietary/lib/libstagefright_sprd_mpeg4enc.so:system/lib/libstagefright_sprd_mpeg4enc.so \
-	vendor/samsung/gtexslte/proprietary/lib/libstagefright_sprd_vpxdec.so:vendor/samsung/gtexslte/proprietary/lib/libstagefright_sprd_vpxdec.so \
-	vendor/samsung/gtexslte/proprietary/lib/libstagefright_sprd_soft_h264dec.so:system/lib/libstagefright_sprd_soft_h264dec.so \
-	# vendor/samsung/gtexslte/proprietary/lib/libstagefright_omx.so:system/lib/libstagefright_omx.so \
-
+	vendor/samsung/gtexslte/proprietary/lib/libomx_avcdec_hw_sprd.so:/system/lib/libomx_avcdec_hw_sprd.so \
+	vendor/samsung/gtexslte/proprietary/lib/libomx_avcdec_sw_sprd.so:/system/lib/libomx_avcdec_sw_sprd.so \
+	vendor/samsung/gtexslte/proprietary/lib/libomx_m4vh263dec_hw_sprd.so:/system/lib/libomx_m4vh263dec_hw_sprd.so \
+	vendor/samsung/gtexslte/proprietary/lib/libomx_m4vh263dec_sw_sprd.so:/system/lib/libomx_m4vh263dec_sw_sprd.so \
+	vendor/samsung/gtexslte/proprietary/lib/libomx_m4vh263enc_hw_sprd.so:/system/lib/libomx_m4vh263enc_hw_sprd.so \
+	vendor/samsung/gtexslte/proprietary/lib/libomx_mp3dec_sprd.so:/system/lib/libomx_mp3dec_sprd.so \
+	vendor/samsung/gtexslte/proprietary/lib/libomx_vpxdec_hw_sprd.so:/system/lib/libomx_vpxdec_hw_sprd.so \
+	vendor/samsung/gtexslte/proprietary/lib/libomx_avcenc_hw_sprd.so:/system/lib/libomx_avcenc_hw_sprd.so \
+	vendor/samsung/gtexslte/proprietary/lib/libstagefright_sprd_h264dec.so:/system/lib/libstagefright_sprd_h264dec.so \
+	vendor/samsung/gtexslte/proprietary/lib/libstagefright_sprd_mp3dec.so:/system/lib/libstagefright_sprd_mp3dec.so \
+	vendor/samsung/gtexslte/proprietary/lib/libstagefright_sprd_mpeg4dec.so:/system/lib/libstagefright_sprd_mpeg4dec.so \
+	vendor/samsung/gtexslte/proprietary/lib/libstagefright_sprd_soft_h264dec.so:/system/lib/libstagefright_sprd_soft_h264dec.so \
+	vendor/samsung/gtexslte/proprietary/lib/libstagefright_sprd_soft_mpeg4dec.so:/system/lib/libstagefright_sprd_soft_mpeg4dec.so \
+	# vendor/samsung/gtexslte/proprietary/lib/libstagefright_sprd_vpxdec.so:/system/lib/libstagefright_sprd_vpxdec.so \
+	# vendor/samsung/gtexslte/proprietary/lib/libstagefright_sprd_h264enc.so:/system/lib/libstagefright_sprd_h264enc.so \
+	# vendor/samsung/gtexslte/proprietary/lib/libstagefright_sprd_mpeg4enc.so:/system/lib/libstagefright_sprd_mpeg4enc.so \
 
 # RILD
 PRODUCT_COPY_FILES += \
@@ -151,6 +133,16 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/gtexslte/proprietary/bin/drsd:system/bin/drsd \
 	vendor/samsung/gtexslte/proprietary/bin/calibration_init:system/bin/calibration_init \
 
+# GPS
+PRODUCT_COPY_FILES += \
+	vendor/samsung/gtexslte/proprietary/etc/HARRIER_ASIC_PATCH_LPRAM_IMAGE.bin:system/etc/HARRIER_ASIC_PATCH_LPRAM_IMAGE.bin \
+	vendor/samsung/gtexslte/proprietary/etc/HARRIER_ASIC_PATCH_RAM_IMAGE.bin:system/etc/HARRIER_ASIC_PATCH_RAM_IMAGE.bin \
+	vendor/samsung/gtexslte/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
+
+# PRODUCT_COPY_FILES += \
+# 	vendor/samsung/gtexslte/proprietary/gps/gps_sprd.so:system/lib/hw/gps.default.so \
+# 	vendor/samsung/gtexslte/proprietary/gps/patchram/HARRIER_ASIC_PATCH_SPRD.bin:system/etc/HARRIER_ASIC_PATCH.bin \
+# 	vendor/samsung/gtexslte/proprietary/gps/config/gps.sprd.xml:system/etc/gnss_cfg.xml
 
 PRODUCT_COPY_FILES += \
 	vendor/samsung/gtexslte/proprietary/lib/libedmnativehelper.so:system/lib/libedmnativehelper.so \
@@ -174,7 +166,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/gtexslte/proprietary/lib/lib_Samsung_Resampler.so:system/lib/lib_Samsung_Resampler.so \
 	vendor/samsung/gtexslte/proprietary/lib/libiwnpi.so:system/lib/libiwnpi.so \
 	vendor/samsung/gtexslte/proprietary/lib/libengbt.so:system/lib/libengbt.so \
-	vendor/samsung/gtexslte/proprietary/lib/libmemoryheapion.so:system/lib/libmemoryheapion.so \
 	vendor/samsung/gtexslte/proprietary/lib/libynoise.so:system/lib/libynoise.so \
 	vendor/samsung/gtexslte/proprietary/lib/libsprdlsc.so:system/lib/libsprdlsc.so \
 	vendor/samsung/gtexslte/proprietary/lib/libspaf.so:system/lib/libspaf.so \
@@ -199,8 +190,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/gtexslte/proprietary/bin/wlandutservice:system/bin/wlandutservice \
 	vendor/samsung/gtexslte/proprietary/bin/macloader:system/bin/macloader \
 	vendor/samsung/gtexslte/proprietary/bin/mfgloader:system/bin/mfgloader \
-	vendor/samsung/gtexslte/proprietary/etc/HARRIER_ASIC_PATCH_LPRAM_IMAGE.bin:system/etc/HARRIER_ASIC_PATCH_LPRAM_IMAGE.bin \
-	vendor/samsung/gtexslte/proprietary/etc/HARRIER_ASIC_PATCH_RAM_IMAGE.bin:system/etc/HARRIER_ASIC_PATCH_RAM_IMAGE.bin \
 	vendor/samsung/gtexslte/proprietary/etc/plmn_se13.bin:system/etc/plmn_se13.bin \
 	vendor/samsung/gtexslte/proprietary/etc/slog_modem.conf:system/etc/slog_modem.conf \
 	vendor/samsung/gtexslte/proprietary/etc/slog.conf:system/etc/slog.conf \
@@ -210,11 +199,14 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/gtexslte/proprietary/etc/connectivity_calibration.ini:system/etc/connectivity_calibration.ini \
 	vendor/samsung/gtexslte/proprietary/etc/firmware/sc2331_fdl.bin:system/etc/firmware/sc2331_fdl.bin \
 	vendor/samsung/gtexslte/proprietary/etc/firmware/sc2331_fw.bin:system/etc/firmware/sc2331_fw.bin \
-	vendor/samsung/gtexslte/proprietary/lib/egl/libGLES_mali.so:system/lib/egl/libGLES_mali.so \
 	vendor/samsung/gtexslte/proprietary/lib/hw/sensors.sc8830.so:system/lib/hw/sensors.sc8830.so \
-	vendor/samsung/gtexslte/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
 	vendor/samsung/gtexslte/proprietary/lib/hw/camera.sc8830.so:system/lib/hw/camera.sc8830.so
 
+	# vendor/samsung/gtexslte/proprietary/lib/libmemoryheapion.so:system/lib/libmemoryheapion.so \
+	# vendor/samsung/gtexslte/proprietary/lib/egl/libGLES_mali.so:system/lib/egl/libGLES_mali.so \
+	# vendor/samsung/gtexslte/proprietary/etc/HARRIER_ASIC_PATCH_LPRAM_IMAGE.bin:system/etc/HARRIER_ASIC_PATCH_LPRAM_IMAGE.bin \
+	# vendor/samsung/gtexslte/proprietary/etc/HARRIER_ASIC_PATCH_RAM_IMAGE.bin:system/etc/HARRIER_ASIC_PATCH_RAM_IMAGE.bin \
+	# vendor/samsung/gtexslte/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
 	# vendor/samsung/gtexslte/proprietary/lib/librilutils.so:system/lib/librilutils.so \
 	# vendor/samsung/gtexslte/proprietary/lib/libeng-audio.so:system/lib/libeng-audio.so
 	# vendor/samsung/gtexslte/proprietary/lib/hw/audio.primary.sc8830.so:system/lib/hw/audio.primary.sc8830.so
