@@ -57,7 +57,8 @@ PRODUCT_COPY_FILES += \
 #Video
 PRODUCT_COPY_FILES += \
 	vendor/samsung/gtexslte/proprietary/lib/libboost.so:system/lib/libboost.so \
-	# vendor/samsung/gtexslte/proprietary/lib/hw/gralloc.sc8830.so:system/lib/hw/gralloc.sc8830.so \
+	vendor/samsung/gtexslte/proprietary/lib/hw/gralloc.sc8830.so:system/lib/hw/gralloc.sc8830.so \
+	vendor/samsung/gtexslte/proprietary/lib/egl/libGLES_mali.so:system/lib/egl/libGLES_mali.so \
 
 #Bluetooth
 PRODUCT_COPY_FILES += \
@@ -66,6 +67,7 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/gtexslte/proprietary/lib/libbt-codec_aptx.so:system/lib/libbt-codec_aptx.so \
 	vendor/samsung/gtexslte/proprietary/lib/libbt-codec_sshd.so:system/lib/libbt-codec_sshd.so \
 	vendor/samsung/gtexslte/proprietary/lib/libicuu1.so:system/lib/libicuu1.so \
+	vendor/samsung/gtexslte/proprietary/lib/libicuoc.so:system/lib/libicuoc.so \
 	vendor/samsung/gtexslte/proprietary/lib/libbt-iopdb_mod.mod.so:system/lib/libbt-iopdb_mod.so \
 
 # Codecs
@@ -89,6 +91,7 @@ PRODUCT_COPY_FILES += \
 
 # RILD
 PRODUCT_COPY_FILES += \
+	vendor/samsung/gtexslte/proprietary/lib/libatchannel.so:system/lib/libatchannel.so \
 	vendor/samsung/gtexslte/proprietary/bin/download:system/bin/download \
 	vendor/samsung/gtexslte/proprietary/bin/npsmobex:system/bin/npsmobex \
 	vendor/samsung/gtexslte/proprietary/bin/at_distributor:system/bin/at_distributor \
@@ -120,12 +123,14 @@ PRODUCT_COPY_FILES += \
 
 # Misc Binaries
 PRODUCT_COPY_FILES += \
+	vendor/samsung/gtexslte/proprietary/bin/engpc:system/bin/engpc \
 	vendor/samsung/gtexslte/proprietary/bin/sprd_res_monitor:system/bin/sprd_res_monitor \
 	vendor/samsung/gtexslte/proprietary/bin/auditd:system/bin/auditd \
 	vendor/samsung/gtexslte/proprietary/bin/cmd_services:system/bin/cmd_services \
 	vendor/samsung/gtexslte/proprietary/bin/charge:system/bin/charge \
 	vendor/samsung/gtexslte/proprietary/bin/scs:system/bin/scs \
 	vendor/samsung/gtexslte/proprietary/bin/charon:system/bin/charon \
+	vendor/samsung/gtexslte/proprietary/bin/wcnd:system/bin/wcnd \
 	vendor/samsung/gtexslte/proprietary/bin/smdexe:system/bin/smdexe \
 	vendor/samsung/gtexslte/proprietary/bin/bootchecker:system/bin/bootchecker \
 	vendor/samsung/gtexslte/proprietary/bin/lpm:system/bin/lpm \
@@ -133,23 +138,26 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/gtexslte/proprietary/bin/calibration_init:system/bin/calibration_init \
 
 #GPS
-PRODUCT_COPY_FILES += \
-	vendor/sprd/gps/slsi/harrier/gps_sprd.so:system/lib/hw/gps.default.so \
-	vendor/sprd/gps/slsi/harrier/patchram/HARRIER_ASIC_PATCH_SPRD.bin:system/etc/HARRIER_ASIC_PATCH.bin \
-	vendor/sprd/gps/slsi/harrier/config/gps.sprd.xml:system/etc/gnss_cfg.xml
+# PRODUCT_COPY_FILES += \
+# 	vendor/sprd/gps/slsi/harrier/gps_sprd.so:system/lib/hw/gps.default.so \
+# 	vendor/sprd/gps/slsi/harrier/patchram/HARRIER_ASIC_PATCH_SPRD.bin:system/etc/HARRIER_ASIC_PATCH.bin \
+# 	vendor/sprd/gps/slsi/harrier/config/gps.sprd.xml:system/etc/gnss_cfg.xml
 
 #bluetooth
 PRODUCT_COPY_FILES += \
-	vendor/sprd/partner/shark/bluetooth/pskey_bt.txt:system/lib/modules/pskey_bt.txt
-
-# PRODUCT_COPY_FILES += \
-# 	vendor/samsung/gtexslte/proprietary/lib/libwrappergps.so:system/lib/libwrappergps.so \
-# 	vendor/samsung/gtexslte/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
-# 	vendor/samsung/gtexslte/proprietary/etc/HARRIER_ASIC_PATCH_LPRAM_IMAGE.bin:system/etc/HARRIER_ASIC_PATCH_LPRAM_IMAGE.bin \
-# 	vendor/samsung/gtexslte/proprietary/etc/HARRIER_ASIC_PATCH_RAM_IMAGE.bin:system/etc/HARRIER_ASIC_PATCH_RAM_IMAGE.bin \
-
+	vendor/sprd/partner/shark/bluetooth/pskey_bt.txt:system/lib/modules/pskey_bt.txt \
+	vendor/samsung/gtexslte/proprietary/lib/libbt-vendor.so:system/lib/libbt-vendor.so \
+	vendor/samsung/gtexslte/proprietary/lib/libengbt.so:system/lib/libengbt.so \
+	vendor/samsung/gtexslte/proprietary/lib/libiwnpi.so:system/lib/libiwnpi.so \
 
 PRODUCT_COPY_FILES += \
+	vendor/samsung/gtexslte/proprietary/lib/libwrappergps.so:system/lib/libwrappergps.so \
+	vendor/samsung/gtexslte/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
+	vendor/samsung/gtexslte/proprietary/etc/HARRIER_ASIC_PATCH_LPRAM_IMAGE.bin:system/etc/HARRIER_ASIC_PATCH_LPRAM_IMAGE.bin \
+	vendor/samsung/gtexslte/proprietary/etc/HARRIER_ASIC_PATCH_RAM_IMAGE.bin:system/etc/HARRIER_ASIC_PATCH_RAM_IMAGE.bin \
+
+PRODUCT_COPY_FILES += \
+	vendor/samsung/gtexslte/proprietary/lib/libbindrr.so:system/lib/libbindrr.so \
 	vendor/samsung/gtexslte/proprietary/lib/libedmnativehelper.so:system/lib/libedmnativehelper.so \
 	vendor/samsung/gtexslte/proprietary/lib/libstlport.so:system/lib/libstlport.so \
 	vendor/samsung/gtexslte/proprietary/lib/libstrongswan.so:system/lib/libstrongswan.so \
@@ -171,6 +179,9 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/gtexslte/proprietary/lib/lib_Samsung_Resampler.so:system/lib/lib_Samsung_Resampler.so \
 	vendor/samsung/gtexslte/proprietary/lib/libynoise.so:system/lib/libynoise.so \
 	vendor/samsung/gtexslte/proprietary/lib/libsprdlsc.so:system/lib/libsprdlsc.so \
+	vendor/samsung/gtexslte/proprietary/lib/libool.so:system/lib/libool.so \
+	vendor/samsung/gtexslte/proprietary/lib/libcrptoo.so:system/lib/libcrptoo.so \
+	vendor/samsung/gtexslte/proprietary/lib/libcc_manager.so:system/lib/libcc_manager.so \
 	vendor/samsung/gtexslte/proprietary/lib/libspaf.so:system/lib/libspaf.so \
 	vendor/samsung/gtexslte/proprietary/lib/libsft_af_ctrl.so:system/lib/libsft_af_ctrl.so \
 	vendor/samsung/gtexslte/proprietary/lib/liblsc.so:system/lib/liblsc.so \
