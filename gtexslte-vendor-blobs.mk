@@ -56,9 +56,9 @@ PRODUCT_COPY_FILES += \
 
 #Video
 PRODUCT_COPY_FILES += \
-	vendor/samsung/gtexslte/proprietary/lib/libboost.so:system/lib/libboost.so \
-	vendor/samsung/gtexslte/proprietary/lib/egl/libGLES_mali.so:system/lib/egl/libGLES_mali.so \
-	vendor/samsung/gtexslte/proprietary/lib/hw/gralloc.sc8830.so:system/lib/hw/gralloc.sc8830.so \
+	hardware/sprd/libgpu/libboost.so:system/lib/libboost.so \
+	# vendor/samsung/gtexslte/proprietary/lib/egl/libGLES_mali.so:system/lib/egl/libGLES_mali.so \
+	# vendor/samsung/gtexslte/proprietary/lib/hw/gralloc.sc8830.so:system/lib/hw/gralloc.sc8830.so \
 
 #Bluetooth
 PRODUCT_COPY_FILES += \
@@ -70,29 +70,21 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/gtexslte/proprietary/lib/libicuoc.so:system/lib/libicuoc.so \
 	vendor/samsung/gtexslte/proprietary/lib/libbt-iopdb_mod.mod.so:system/lib/libbt-iopdb_mod.so \
 
-# Codecs
+#Codecs
 PRODUCT_COPY_FILES += \
-	vendor/samsung/gtexslte/proprietary/lib/libomx_avcdec_hw_sprd.so:/system/lib/libomx_avcdec_hw_sprd.so \
-	vendor/samsung/gtexslte/proprietary/lib/libomx_avcdec_sw_sprd.so:/system/lib/libomx_avcdec_sw_sprd.so \
-	vendor/samsung/gtexslte/proprietary/lib/libomx_m4vh263dec_hw_sprd.so:/system/lib/libomx_m4vh263dec_hw_sprd.so \
-	vendor/samsung/gtexslte/proprietary/lib/libomx_m4vh263dec_sw_sprd.so:/system/lib/libomx_m4vh263dec_sw_sprd.so \
-	vendor/samsung/gtexslte/proprietary/lib/libomx_m4vh263enc_hw_sprd.so:/system/lib/libomx_m4vh263enc_hw_sprd.so \
-	vendor/samsung/gtexslte/proprietary/lib/libomx_mp3dec_sprd.so:/system/lib/libomx_mp3dec_sprd.so \
-	vendor/samsung/gtexslte/proprietary/lib/libomx_vpxdec_hw_sprd.so:/system/lib/libomx_vpxdec_hw_sprd.so \
-	vendor/samsung/gtexslte/proprietary/lib/libomx_avcenc_hw_sprd.so:/system/lib/libomx_avcenc_hw_sprd.so \
-	vendor/samsung/gtexslte/proprietary/lib/libstagefright_sprd_h264dec.so:/system/lib/libstagefright_sprd_h264dec.so \
-	vendor/samsung/gtexslte/proprietary/lib/libstagefright_sprd_mp3dec.so:/system/lib/libstagefright_sprd_mp3dec.so \
-	vendor/samsung/gtexslte/proprietary/lib/libstagefright_sprd_mpeg4dec.so:/system/lib/libstagefright_sprd_mpeg4dec.so \
-	vendor/samsung/gtexslte/proprietary/lib/libstagefright_sprd_soft_h264dec.so:/system/lib/libstagefright_sprd_soft_h264dec.so \
-	vendor/samsung/gtexslte/proprietary/lib/libstagefright_sprd_soft_mpeg4dec.so:/system/lib/libstagefright_sprd_soft_mpeg4dec.so \
-	vendor/samsung/gtexslte/proprietary/lib/libstagefright_sprd_vpxdec.so:/system/lib/libstagefright_sprd_vpxdec.so \
-	vendor/samsung/gtexslte/proprietary/lib/libstagefright_sprd_h264enc.so:/system/lib/libstagefright_sprd_h264enc.so \
-	vendor/samsung/gtexslte/proprietary/lib/libstagefright_sprd_mpeg4enc.so:/system/lib/libstagefright_sprd_mpeg4enc.so \
+	hardware/sprd/omx-components/proprietory/libomx_aacdec_sprd.so:/system/lib/libomx_aacdec_sprd.so \
+	hardware/sprd/omx-components/proprietory/libomx_avcdec_hw_sprd.so:/system/lib/libomx_avcdec_hw_sprd.so \
+	hardware/sprd/omx-components/proprietory/libomx_avcdec_sw_sprd.so:/system/lib/libomx_avcdec_sw_sprd.so \
+	hardware/sprd/omx-components/proprietory/libomx_m4vh263dec_hw_sprd.so:/system/lib/libomx_m4vh263dec_hw_sprd.so \
+	hardware/sprd/omx-components/proprietory/libomx_m4vh263dec_sw_sprd.so:/system/lib/libomx_m4vh263dec_sw_sprd.so \
+	hardware/sprd/omx-components/proprietory/libomx_m4vh263enc_hw_sprd.so:/system/lib/libomx_m4vh263enc_hw_sprd.so \
+	hardware/sprd/omx-components/proprietory/libomx_mp3dec_sprd.so:/system/lib/libomx_mp3dec_sprd.so \
+	hardware/sprd/omx-components/proprietory/libomx_vpxdec_hw_sprd.so:/system/lib/libomx_vpxdec_hw_sprd.so \
+	hardware/sprd/omx-components/proprietory/libomx_avcenc_hw_sprd.so:/system/lib/libomx_avcenc_hw_sprd.so \
 
 # RILD
 PRODUCT_COPY_FILES += \
 	vendor/samsung/gtexslte/proprietary/lib/libatchannel.so:system/lib/libatchannel.so \
-	vendor/samsung/gtexslte/proprietary/bin/download:system/bin/download \
 	vendor/samsung/gtexslte/proprietary/bin/npsmobex:system/bin/npsmobex \
 	vendor/samsung/gtexslte/proprietary/bin/ddexe:system/bin/ddexe \
 	vendor/samsung/gtexslte/proprietary/bin/connfwexe:system/bin/connfwexe \
@@ -113,6 +105,8 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/gtexslte/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
 	vendor/samsung/gtexslte/proprietary/bin/refnotify:system/bin/refnotify \
 	vendor/samsung/gtexslte/proprietary/bin/at_distributor:system/bin/at_distributor \
+	vendor/samsung/gtexslte/proprietary/bin/download:system/bin/download \
+
 
 # Camera
 PRODUCT_COPY_FILES += \
@@ -135,7 +129,7 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/gtexslte/proprietary/bin/lpm:system/bin/lpm \
 	vendor/samsung/gtexslte/proprietary/bin/drsd:system/bin/drsd \
 	vendor/samsung/gtexslte/proprietary/bin/calibration_init:system/bin/calibration_init \
-# vendor/samsung/gtexslte/proprietary/bin/engpc:system/bin/engpc \
+	vendor/samsung/gtexslte/proprietary/bin/engpc:system/bin/engpc \
 
 #GPS
 PRODUCT_COPY_FILES += \
@@ -148,16 +142,13 @@ PRODUCT_COPY_FILES += \
 #bluetooth
 PRODUCT_COPY_FILES += \
 	vendor/sprd/partner/shark/bluetooth/pskey_bt.txt:system/lib/modules/pskey_bt.txt \
-	# vendor/samsung/gtexslte/proprietary/lib/libbt-vendor.so:system/lib/libbt-vendor.so \
+	vendor/samsung/gtexslte/proprietary/lib/libbt-vendor.so:system/lib/libbt-vendor.so \
 	# vendor/samsung/gtexslte/proprietary/lib/libengbt.so:system/lib/libengbt.so \
 	# vendor/samsung/gtexslte/proprietary/lib/libiwnpi.so:system/lib/libiwnpi.so \
 
-# PRODUCT_COPY_FILES += \
-# 	vendor/samsung/gtexslte/proprietary/etc/ca.pem:system/etc/ca.pem \
-# 	vendor/samsung/gtexslte/proprietary/lib/libwrappergps.so:system/lib/libwrappergps.so \
-# 	vendor/samsung/gtexslte/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
-# 	vendor/samsung/gtexslte/proprietary/etc/HARRIER_ASIC_PATCH_LPRAM_IMAGE.bin:system/etc/HARRIER_ASIC_PATCH_LPRAM_IMAGE.bin \
-# 	vendor/samsung/gtexslte/proprietary/etc/HARRIER_ASIC_PATCH_RAM_IMAGE.bin:system/etc/HARRIER_ASIC_PATCH_RAM_IMAGE.bin \
+#encryption
+PRODUCT_COPY_FILES += \
+	# vendor/samsung/gtexslte/proprietary/lib/hw/keystore.sc8830.so:system/lib/hw/keystore.sc8830.so \
 
 PRODUCT_COPY_FILES += \
 	vendor/samsung/gtexslte/proprietary/lib/libbindrr.so:system/lib/libbindrr.so \
