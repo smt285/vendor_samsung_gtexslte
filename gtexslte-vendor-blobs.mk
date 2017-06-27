@@ -135,13 +135,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	vendor/samsung/gtexslte/proprietary/etc/ca.pem:system/etc/ca.pem \
 	vendor/samsung/gtexslte/proprietary/lib/libwrappergps.so:system/lib/libwrappergps.so \
-	vendor/sprd/gps/slsi/harrier/gps_sprd.so:system/lib/hw/gps.default.so \
-	vendor/sprd/gps/slsi/harrier/patchram/HARRIER_ASIC_PATCH_SPRD.bin:system/etc/HARRIER_ASIC_PATCH.bin \
-	vendor/sprd/gps/slsi/harrier/config/gps.sprd.xml:system/etc/gnss_cfg.xml \
+	hardware/sprd/gps/slsi/harrier/gps_sprd.so:system/lib/hw/gps.default.so \
+	hardware/sprd/gps/slsi/harrier/patchram/HARRIER_ASIC_PATCH_SPRD.bin:system/etc/HARRIER_ASIC_PATCH.bin \
+	hardware/sprd/gps/slsi/harrier/config/gps.sprd.xml:system/etc/gnss_cfg.xml \
 
 #bluetooth
 PRODUCT_COPY_FILES += \
-	vendor/sprd/partner/shark/bluetooth/pskey_bt.txt:system/lib/modules/pskey_bt.txt \
+	hardware/sprd/partner/shark/bluetooth/pskey_bt.txt:system/lib/modules/pskey_bt.txt \
 	vendor/samsung/gtexslte/proprietary/lib/libbt-vendor.so:system/lib/libbt-vendor.so \
 	# vendor/samsung/gtexslte/proprietary/lib/libengbt.so:system/lib/libengbt.so \
 	# vendor/samsung/gtexslte/proprietary/lib/libiwnpi.so:system/lib/libiwnpi.so \
