@@ -143,8 +143,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	hardware/sprd/partner/shark/bluetooth/pskey_bt.txt:system/lib/modules/pskey_bt.txt \
 	vendor/samsung/gtexslte/proprietary/lib/libbt-vendor.so:system/lib/libbt-vendor.so \
-	# vendor/samsung/gtexslte/proprietary/lib/libengbt.so:system/lib/libengbt.so \
-	# vendor/samsung/gtexslte/proprietary/lib/libiwnpi.so:system/lib/libiwnpi.so \
+	vendor/samsung/gtexslte/proprietary/lib/libengbt.so:system/lib/libengbt.so \
+	vendor/samsung/gtexslte/proprietary/lib/libiwnpi.so:system/lib/libiwnpi.so \
 
 #encryption
 PRODUCT_COPY_FILES += \
