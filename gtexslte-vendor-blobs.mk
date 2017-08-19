@@ -57,7 +57,7 @@ PRODUCT_COPY_FILES += \
 #Video
 PRODUCT_COPY_FILES += \
 	hardware/sprd/libgpu/libboost.so:system/lib/libboost.so \
-	hardware/sprd/libgpu/libmemoryheapion.so:system/lib/libmemoryheapion.so \
+	vendor/samsung/gtexslte/proprietary/lib/libmemoryheapion.so:system/lib/libmemoryheapion.so \
 	# vendor/samsung/gtexslte/proprietary/lib/egl/libGLES_mali.so:system/lib/egl/libGLES_mali.so \
 	# vendor/samsung/gtexslte/proprietary/lib/hw/gralloc.sc8830.so:system/lib/hw/gralloc.sc8830.so \
 
