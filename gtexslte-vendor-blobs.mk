@@ -45,11 +45,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/gtexslte/proprietary/lib/libaudio-ril.so:system/lib/libaudio-ril.so \
 	vendor/samsung/gtexslte/proprietary/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
 	vendor/samsung/gtexslte/proprietary/lib/libvbpga.so:system/lib/libvbpga.so \
-	vendor/samsung/gtexslte/proprietary/etc/codec_pga.xml:system/etc/codec_pga.xml \
-	vendor/samsung/gtexslte/proprietary/etc/tiny_hw.xml:system/etc/tiny_hw.xml \
-	vendor/samsung/gtexslte/proprietary/etc/audio_para:system/etc/audio_para \
-	vendor/samsung/gtexslte/proprietary/etc/audio_hw.xml:system/etc/audio_hw.xml \
-	vendor/samsung/gtexslte/proprietary/etc/audio_policy.conf:system/etc/audio_policy.conf \
 	vendor/samsung/gtexslte/proprietary/lib/libatchannel.so:system/lib/libatchannel.so \
 	vendor/samsung/gtexslte/proprietary/lib/librilutils.so:system/lib/librilutils.so \
 	# vendor/samsung/gtexslte/proprietary/lib/hw/audio_policy.sc8830.so:system/lib/hw/audio_policy.sc8830.so \
