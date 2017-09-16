@@ -173,18 +173,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/gtexslte/proprietary/lib/libcrptoo.so:system/lib/libcrptoo.so \
 	vendor/samsung/gtexslte/proprietary/lib/libcc_manager.so:system/lib/libcc_manager.so \
 	vendor/samsung/gtexslte/proprietary/lib/libspaf.so:system/lib/libspaf.so \
-	vendor/samsung/gtexslte/proprietary/lib/libsft_af_ctrl.so:system/lib/libsft_af_ctrl.so \
-	vendor/samsung/gtexslte/proprietary/lib/liblsc.so:system/lib/liblsc.so \
-	vendor/samsung/gtexslte/proprietary/lib/libdeflicker.so:system/lib/libdeflicker.so \
-	vendor/samsung/gtexslte/proprietary/lib/libcalibration.so:system/lib/libcalibration.so \
-	vendor/samsung/gtexslte/proprietary/lib/libawb.so:system/lib/libawb.so \
-	vendor/samsung/gtexslte/proprietary/lib/libae.so:system/lib/libae.so \
-	vendor/samsung/gtexslte/proprietary/lib/libAl_Awb_v2.so:system/lib/libAl_Awb_v2.so \
-	vendor/samsung/gtexslte/proprietary/lib/libefuse.so:system/lib/libefuse.so \
-	vendor/samsung/gtexslte/proprietary/lib/libbm.so:system/lib/libbm.so \
-	vendor/samsung/gtexslte/proprietary/lib/libaf_running.so:system/lib/libaf_running.so \
-	vendor/samsung/gtexslte/proprietary/lib/libAF.so:system/lib/libAF.so \
-	vendor/samsung/gtexslte/proprietary/lib/libaf_tune.so:system/lib/libaf_tune.so \
 	vendor/samsung/gtexslte/proprietary/etc/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
 	vendor/samsung/gtexslte/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
 	vendor/samsung/gtexslte/proprietary/etc/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
@@ -202,8 +190,19 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/gtexslte/proprietary/etc/firmware/sc2331_fdl.bin:system/etc/firmware/sc2331_fdl.bin \
 	vendor/samsung/gtexslte/proprietary/etc/firmware/sc2331_fw.bin:system/etc/firmware/sc2331_fw.bin \
 	vendor/samsung/gtexslte/proprietary/lib/hw/sensors.sc8830.so:system/lib/hw/sensors.sc8830.so \
-	vendor/samsung/gtexslte/proprietary/lib/hw/camera.sc8830.so:system/lib/hw/camera.sc8830.so
-
+	vendor/samsung/gtexslte/proprietary/lib/hw/camera.sc8830.so:system/lib/hw/camera.sc8830.so \
+	vendor/samsung/gtexslte/proprietary/lib/libsft_af_ctrl.so:system/lib/libsft_af_ctrl.so \
+	vendor/samsung/gtexslte/proprietary/lib/liblsc.so:system/lib/liblsc.so \
+	vendor/samsung/gtexslte/proprietary/lib/libdeflicker.so:system/lib/libdeflicker.so \
+	vendor/samsung/gtexslte/proprietary/lib/libcalibration.so:system/lib/libcalibration.so \
+	vendor/samsung/gtexslte/proprietary/lib/libawb.so:system/lib/libawb.so \
+	vendor/samsung/gtexslte/proprietary/lib/libae.so:system/lib/libae.so \
+	vendor/samsung/gtexslte/proprietary/lib/libAl_Awb_v2.so:system/lib/libAl_Awb_v2.so \
+	vendor/samsung/gtexslte/proprietary/lib/libefuse.so:system/lib/libefuse.so \
+	vendor/samsung/gtexslte/proprietary/lib/libbm.so:system/lib/libbm.so \
+	vendor/samsung/gtexslte/proprietary/lib/libaf_running.so:system/lib/libaf_running.so \
+	vendor/samsung/gtexslte/proprietary/lib/libAF.so:system/lib/libAF.so \
+	vendor/samsung/gtexslte/proprietary/lib/libaf_tune.so:system/lib/libaf_tune.so \
 	# vendor/samsung/gtexslte/proprietary/lib/hw/camera.sc8830.so:system/lib/hw/camera.sc8830.so
 	# vendor/samsung/gtexslte/proprietary/lib/librilutils.so:system/lib/librilutils.so \
 	# vendor/samsung/gtexslte/proprietary/lib/libeng-audio.so:system/lib/libeng-audio.so
