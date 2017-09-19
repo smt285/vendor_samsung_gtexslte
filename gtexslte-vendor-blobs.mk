@@ -68,15 +68,15 @@ PRODUCT_COPY_FILES += \
 
 #Codecs
 PRODUCT_COPY_FILES += \
-	vendor/samsung/gtexslte/proprietory/omx-components/proprietory/libomx_aacdec_sprd.so:/system/lib/libomx_aacdec_sprd.so \
-	vendor/samsung/gtexslte/proprietory/omx-components/proprietory/libomx_avcdec_hw_sprd.so:/system/lib/libomx_avcdec_hw_sprd.so \
-	vendor/samsung/gtexslte/proprietory/omx-components/proprietory/libomx_avcdec_sw_sprd.so:/system/lib/libomx_avcdec_sw_sprd.so \
-	vendor/samsung/gtexslte/proprietory/omx-components/proprietory/libomx_m4vh263dec_hw_sprd.so:/system/lib/libomx_m4vh263dec_hw_sprd.so \
-	vendor/samsung/gtexslte/proprietory/omx-components/proprietory/libomx_m4vh263dec_sw_sprd.so:/system/lib/libomx_m4vh263dec_sw_sprd.so \
-	vendor/samsung/gtexslte/proprietory/omx-components/proprietory/libomx_m4vh263enc_hw_sprd.so:/system/lib/libomx_m4vh263enc_hw_sprd.so \
-	vendor/samsung/gtexslte/proprietory/omx-components/proprietory/libomx_mp3dec_sprd.so:/system/lib/libomx_mp3dec_sprd.so \
-	vendor/samsung/gtexslte/proprietory/omx-components/proprietory/libomx_vpxdec_hw_sprd.so:/system/lib/libomx_vpxdec_hw_sprd.so \
-	vendor/samsung/gtexslte/proprietory/omx-components/proprietory/libomx_avcenc_hw_sprd.so:/system/lib/libomx_avcenc_hw_sprd.so \
+	vendor/samsung/gtexslte/proprietary/omx-components/libomx_aacdec_sprd.so:/system/lib/libomx_aacdec_sprd.so \
+	vendor/samsung/gtexslte/proprietary/omx-components/libomx_avcdec_hw_sprd.so:/system/lib/libomx_avcdec_hw_sprd.so \
+	vendor/samsung/gtexslte/proprietary/omx-components/libomx_avcdec_sw_sprd.so:/system/lib/libomx_avcdec_sw_sprd.so \
+	vendor/samsung/gtexslte/proprietary/omx-components/libomx_m4vh263dec_hw_sprd.so:/system/lib/libomx_m4vh263dec_hw_sprd.so \
+	vendor/samsung/gtexslte/proprietary/omx-components/libomx_m4vh263dec_sw_sprd.so:/system/lib/libomx_m4vh263dec_sw_sprd.so \
+	vendor/samsung/gtexslte/proprietary/omx-components/libomx_m4vh263enc_hw_sprd.so:/system/lib/libomx_m4vh263enc_hw_sprd.so \
+	vendor/samsung/gtexslte/proprietary/omx-components/libomx_mp3dec_sprd.so:/system/lib/libomx_mp3dec_sprd.so \
+	vendor/samsung/gtexslte/proprietary/omx-components/libomx_vpxdec_hw_sprd.so:/system/lib/libomx_vpxdec_hw_sprd.so \
+	vendor/samsung/gtexslte/proprietary/omx-components/libomx_avcenc_hw_sprd.so:/system/lib/libomx_avcenc_hw_sprd.so \
 
 # RILD
 PRODUCT_COPY_FILES += \
