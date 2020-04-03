@@ -65,6 +65,9 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/gtexslte/proprietary/lib/libicuu1.so:system/lib/libicuu1.so \
 	vendor/samsung/gtexslte/proprietary/lib/libicuoc.so:system/lib/libicuoc.so \
 	vendor/samsung/gtexslte/proprietary/lib/libbt-iopdb_mod.mod.so:system/lib/libbt-iopdb_mod.so \
+	vendor/samsung/gtexslte/proprietary/system/app/Bluetooth/Bluetooth.apk:system/app/Bluetooth/Bluetooth.apk \
+	vendor/samsung/gtexslte/proprietary/system/app/Bluetooth/lib/arm/libbluetooth_jni.so:system/app/Bluetooth/lib/arm/libbluetooth_jni.so \
+	vendor/samsung/gtexslte/proprietary/system/lib/hw/bluetooth.default.so:system/lib/hw/bluetooth.default.so
 
 #Codecs
 PRODUCT_COPY_FILES += \
